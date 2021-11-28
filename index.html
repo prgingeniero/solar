@@ -1,0 +1,916 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="canonical" href="http://prg.engineer/">
+      
+      <link rel="icon" href="assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.6">
+    
+    
+      
+        <title>prg.engineer</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.a57b2b03.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.3f5d1f46.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#ffc105">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="css/ansi-colours.css">
+    
+      <link rel="stylesheet" href="css/jupyter-cells.css">
+    
+      <link rel="stylesheet" href="css/pandas-dataframe.css">
+    
+    
+      
+
+  
+
+
+  
+
+  
+
+
+  <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-BY8HY373BD"),document.addEventListener("DOMContentLoaded",function(){"undefined"!=typeof location$&&location$.subscribe(function(t){gtag("config","G-BY8HY373BD",{page_path:t.pathname})})})</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BY8HY373BD"></script>
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="amber" data-md-color-accent="">
+  
+    
+    <script>function __prefix(e){return new URL(".",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="." title="prg.engineer" class="md-header__button md-logo" aria-label="prg.engineer" data-md-component="logo">
+      
+  <img src="assets/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            prg.engineer
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Home
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <div class="md-header__option">
+        <div class="md-select">
+          
+          <button class="md-header__button md-icon" aria-label="Seleccionar idioma">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24z"/></svg>
+          </button>
+          <div class="md-select__inner">
+            <ul class="md-select__list">
+              
+                <li class="md-select__item">
+                  <a href="/" hreflang="es" class="md-select__link">
+                    Español
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="/en/" hreflang="en" class="md-select__link">
+                    English
+                  </a>
+                </li>
+                
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Limpiar" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    
+  
+
+
+  <li class="md-tabs__item">
+    <a href="." class="md-tabs__link md-tabs__link--active">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="contacto/" class="md-tabs__link">
+      Contacto
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="estudios/1_Autoconsumo_Sector_Servicios/" class="md-tabs__link">
+        Estudios
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="prg.engineer" class="md-nav__button md-logo" aria-label="prg.engineer" data-md-component="logo">
+      
+  <img src="assets/logo.svg" alt="logo">
+
+    </a>
+    prg.engineer
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        Home
+      </a>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="contacto/" class="md-nav__link">
+        Contacto
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Estudios
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Estudios" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Estudios
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="estudios/1_Autoconsumo_Sector_Servicios/" class="md-nav__link">
+        Autoconsumo Sector Servicios
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="estudios/2_Autoconsumo_Sectores_Productivos%20copy/" class="md-nav__link">
+        Autoconsumo Sectores Productivos
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="estudios/3_Almacenamiento_Sectores_Productivos/" class="md-nav__link">
+        Almacenamiento Sectores Productivos
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="estudios/4_Autoconsumo_Residencial/" class="md-nav__link">
+        Autoconsumo Residencial
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="estudios/5_Almacenamiento_Residencial/" class="md-nav__link">
+        Almacenamiento Residencial
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="estudios/6_Renovables_Termicas_en_el_Sector_Residencial/" class="md-nav__link">
+        Renovables Termicas Residencial
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="_1"></h1>
+<p><center>
+    <h1 style="color:Orange;">Estudios y Proyectos</h1>
+</center>
+<img alt="" src="img/idae_rotulo.png" width="100%" />
+
+
+
+
+    
+<style>
+    .md-typeset .blog-post:first-of-type h3 {
+        margin-top: 0;
+    }
+
+    .md-typeset .blog-post-title {
+        margin-bottom: 0;
+    }
+
+    .md-typeset .blog-post-extra {
+        color: var(--md-default-fg-color--light);
+    }
+
+    .md-typeset .blog-center {
+        text-align: center;
+    }
+
+    .md-typeset .blog-pagination {
+        display: inline-block;
+    }
+
+    .md-typeset .blog-pagination a {
+        color: var(--md-typeset-color);
+        float: left;
+        padding: .25em 1em;
+        text-decoration: none;
+        border-radius: 1em;
+        margin-left: .25em;
+        margin-right: .25em;
+        transition: all .15s ease-in-out;
+    }
+
+    .md-typeset .blog-pagination a.active {
+        background-color: var(--md-typeset-a-color);
+        color: white;
+        font-weight: bold;
+    }
+
+    .md-typeset .blog-pagination a:hover:not(.active) {
+        background-color: #dddddda1;
+    }
+
+    .md-typeset .blog-hidden {
+        display: none;
+    }
+</style>
+
+    <style>
+        .blog-override-post {
+            padding: 30px 60px 30px 0;
+            margin-top: 10px;
+            border: 1px solid transparent;
+            cursor: default;
+        }
+
+        .blog-override-post .blog-post-title {
+            color: var(--md-typeset-a-color);
+            margin-top: 0;
+        }
+
+        .blog-post-description {
+            color: var(--md-typeset-color);
+        }
+
+        .blog-override-post:first-of-type {
+            margin-top: 0;
+        }
+
+        .blog-override-post:hover {
+            border: 1px solid #ecb70677;
+            box-shadow: 3px 4px 10px #f1ce05;
+        }
+
+        .blog-override-post,
+        .blog-override-post > * {
+            transition: all 0.3s ease-in-out;
+        }
+
+        .blog-override-post:hover > * {
+            transform: translateX(30px);
+        }
+
+        .blog-post-description, .blog-post-extra {
+            opacity: 0.8;
+        }
+
+        .blog-override-post:hover .blog-post-description, 
+        .blog-override-post:hover .blog-post-extra {
+            opacity: 1;
+        }
+    </style>
+
+
+
+
+
+
+
+<div class="pages">
+    
+        
+        <div class="page" id="page1">
+
+            
+                
+                
+                
+                
+
+                
+                
+                    
+                
+
+                
+                
+                    
+                
+                
+
+                
+
+                
+                    <a href="http://prg.engineer/estudios/1_Autoconsumo_Sector_Servicios/">
+    <div class="blog-override-post">
+        <h1 class="blog-post-title">Autoconsumo Sector Servicios</h1>
+        <img src="./img/Autoconsumo Sector Servicios.png" style="width:100%" alt="">
+
+    <p class="blog-post-description">Realización de instalaciones de autoconsumo, con fuentes de energía renovable (eólicas o fotovoltaicas), en el sector servicios, con o sin almacenamiento.</p>
+    <div class="blog-post-extra">
+    </div>
+    </div>
+</a>
+
+                    
+                
+            
+                
+                
+                
+                
+
+                
+                
+                    
+                
+
+                
+                
+                    
+                
+                
+
+                
+
+                
+                    <a href="http://prg.engineer/estudios/2_Autoconsumo_Sectores_Productivos%20copy/">
+    <div class="blog-override-post">
+        <h1 class="blog-post-title">Autoconsumo Sectores Productivos</h1>
+        <img src="./img/Autoconsumo Sectores Productivos.png" style="width:100%" alt="">
+
+    <p class="blog-post-description">Realización de instalaciones de autoconsumo, con fuentes de energía renovable (eólicas o fotovoltaicas), en otros sectores productivos de la economía, con o sin almacenamiento.</p>
+    <div class="blog-post-extra">
+    </div>
+    </div>
+</a>
+
+                    
+                
+            
+                
+                
+                
+                
+
+                
+                
+                    
+                
+
+                
+                
+                    
+                
+                
+
+                
+
+                
+                    <a href="http://prg.engineer/estudios/3_Almacenamiento_Sectores_Productivos/">
+    <div class="blog-override-post">
+        <h1 class="blog-post-title">Almacenamiento Sectores Productivos</h1>
+        <img src="./img/Almacenamiento Sectores Productivos.png" style="width:100%" alt="">
+
+    <p class="blog-post-description">Incorporación de almacenamiento en instalaciones de autoconsumo, con fuentes de energía renovable, ya existentes en el sector servicios y otros sectores productivos (solo serán consideradas elegibles instalaciones de almacenamiento que no superen una...</p>
+    <div class="blog-post-extra">
+    </div>
+    </div>
+</a>
+
+                    
+                
+            
+                
+                
+                
+                
+
+                
+                
+                    
+                
+
+                
+                
+                    
+                
+                
+
+                
+
+                
+                    <a href="http://prg.engineer/estudios/4_Autoconsumo_Residencial/">
+    <div class="blog-override-post">
+        <h1 class="blog-post-title">Autoconsumo Residencial</h1>
+        <img src="./img/Autoconsumo Residencial.png" style="width:100%" alt="">
+
+    <p class="blog-post-description">Realización de instalaciones de autoconsumo, con fuentes de energía renovable (eólicas o fotovoltaicas), en el sector residencial, las administraciones públicas y el tercer sector (entidades privadas sin ánimo de lucro), con o sin almacenamiento....</p>
+    <div class="blog-post-extra">
+    </div>
+    </div>
+</a>
+
+                    
+                
+            
+                
+                
+                
+                
+
+                
+                
+                    
+                
+
+                
+                
+                    
+                
+                
+
+                
+
+                
+                    <a href="http://prg.engineer/estudios/5_Almacenamiento_Residencial/">
+    <div class="blog-override-post">
+        <h1 class="blog-post-title">Almacenamiento Residencial</h1>
+        <img src="./img/Almacenamiento Residencial.png" style="width:100%" alt="">
+
+    <p class="blog-post-description">Incorporación de almacenamiento en instalaciones de autoconsumo, con fuentes de energía renovable, ya existentes en el sector residencial, las administraciones públicas y el tercer sector (solo serán consideradas elegibles instalaciones de...</p>
+    <div class="blog-post-extra">
+    </div>
+    </div>
+</a>
+
+                    
+                
+            
+                
+                
+                
+                
+
+                
+                
+                    
+                
+
+                
+                
+                    
+                
+                
+
+                
+
+                
+                    <a href="http://prg.engineer/estudios/6_Renovables_Termicas_en_el_Sector_Residencial/">
+    <div class="blog-override-post">
+        <h1 class="blog-post-title">Renovables Termicas Residencial</h1>
+        <img src="./img/Renovables Termicas Residencial.png" style="width:100%" alt="">
+
+    <p class="blog-post-description">Realización de instalaciones de energías renovables térmicas en el sector residencial destinadas a la climatización y agua caliente sanitaria. Se incluyen las tecnologías solar térmica, geotérmica, hidrotérmica, aerotérmica (exceptuando las...</p>
+    <div class="blog-post-extra">
+    </div>
+    </div>
+</a>
+
+                    
+                
+            
+        </div>
+    
+</div>
+
+<div class="blog-center blog-hidden">
+    <div class="blog-pagination " id="blog-pagination">
+        
+            <a class="page-number" href="#blog-p1">1</a>
+        
+    </div>
+    
+        <div>Total <b>6</b> posts.</div>
+    
+</div></p>
+<iframe hidden allowfullscreen="true" src="https://formulario-yzohicfcma-ew.a.run.app/contacto" width="100%" height="75%" style="border: 1px solid #fff; max-width: 1200px; min-height: 2500px" > </iframe>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Pie">
+      
+      
+        
+        <a href="contacto/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Contacto" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Siguiente
+              </span>
+              Contacto
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            © 2021 prg.engineer
+          </div>
+        
+        
+          Made with
+          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+            Material for MkDocs
+          </a>
+        
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs", "navigation.tabs.sticky"], "translations": {"clipboard.copy": "Copiar al portapapeles", "clipboard.copied": "Copiado al portapapeles", "search.config.lang": "es", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "B\u00fasqueda", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.term.missing": "Falta", "select.version.title": "Seleccionar versi\u00f3n"}, "search": "assets/javascripts/workers/search.fcfe8b6d.min.js", "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.b1047164.min.js"></script>
+      
+        <script src="javascripts/config.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html><script>var currentPage = 0
+const lastComponent = window.location.href.split("/").slice(-1).pop()
+
+if (lastComponent && lastComponent.slice(0, 7) == "#blog-p") {
+  const page = parseInt(lastComponent.slice(7))
+  if (page) {
+    currentPage = page - 1
+  }
+}
+
+var pagination = document.getElementById("blog-pagination");
+if (pagination) {
+  var links = pagination.getElementsByClassName("page-number");
+  if (links.length) {
+    for (var i = 0; i < links.length; i++) {
+      // Toggle pagination highlight
+      links[i].addEventListener("click", function () {
+        var current = pagination.getElementsByClassName("active");
+        if (current.length) {
+          current[0].className = current[0].className.replace(
+            " active", ""
+          );
+        }
+        this.className += " active";
+
+        // Togglg visibility of pages
+        const destPage = parseInt(this.textContent)
+        var pages = document.getElementsByClassName("page")
+        if (destPage && pages.length) {
+          for (var j = 0; j < pages.length; j++) {
+            const pageId = parseInt(pages[j].id.replace("page", ""))
+            if (pageId != destPage) {
+              // This is not the destination page
+              if (!pages[j].className.includes("blog-hidden")) {
+                pages[j].className += " blog-hidden"
+              }
+            } else {
+              // This is the destination page
+              pages[j].className = pages[j].className.replace(" blog-hidden", "")
+            }
+          }
+        }
+      });
+    }
+    links[currentPage].className += " active"
+    links[currentPage].click();
+  }
+}
+</script>
