@@ -1,4 +1,4 @@
-site_name: prg.engineer
+site_name: PRG
 # site_url: http://ayudas.solar
 site_url: http://prg.engineer
 
@@ -38,17 +38,13 @@ markdown_extensions:
 
 plugins:
   - search
-  - mknotebooks
+  # - mknotebooks
   # - blog:
   #     format: "(%m/%d/%y)"
   #     text-align: "right"
   #     display-article-date: False
   #     folder: documento
 
-  - blogging:
-      dirs:
-        - estudios
-      template: override/blog-override.html
 
 extra:
   analytics:
@@ -73,5 +69,5 @@ extra_javascript:
   # - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
-copyright: © 2021 prg.engineer
+copyright: © 2021 PRG
 

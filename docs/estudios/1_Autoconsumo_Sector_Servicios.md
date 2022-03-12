@@ -2,10 +2,8 @@
 description: Realización de instalaciones de autoconsumo, con fuentes de energía renovable (eólicas o fotovoltaicas), en el sector servicios, con o sin almacenamiento. 
 ---
 
-# Autoconsumo Sector Servicios 
-<center> 
-:fontawesome-solid-hotel: :fontawesome-solid-solar-panel: :fontawesome-solid-fan:
- </center>
+# 🤮 Autoconsumo Sector Servicios 
+
 
 ![](../img/Autoconsumo Sector Servicios.png){ width=100%}
 

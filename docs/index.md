@@ -6,7 +6,6 @@ exclude_from_blog: true
     <h1 style="color:Orange;">Estudios y Proyectos</h1>
 </center>
 ![](./img/idae_rotulo.png){ width=100%}
-{{ blog_content }}
 
 
 

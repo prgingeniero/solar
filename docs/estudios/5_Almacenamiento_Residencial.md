@@ -1,12 +1,14 @@
----
-description: Incorporación de almacenamiento en instalaciones de autoconsumo, con fuentes de energía renovable, ya existentes en el sector residencial, las administraciones públicas y el tercer sector (solo serán consideradas elegibles instalaciones de almacenamiento que no superen una ratio de capacidad instalada de almacenamiento frente a potencia de generación de 2 kWh/kW. Las tecnologías plomo-ácido no son elegibles).
----
+
 
 #  Almacenamiento Residencial
-<center> 
-:fontawesome-solid-home: :fontawesome-solid-car-battery:
- </center>
+
+
 ![](../img/Almacenamiento Residencial.png){ width=100%}
+
+
+## Descripcion:
+ Incorporación de almacenamiento en instalaciones de autoconsumo, con fuentes de energía renovable, ya existentes en el sector residencial, las administraciones públicas y el tercer sector (solo serán consideradas elegibles instalaciones de almacenamiento que no superen una ratio de capacidad instalada de almacenamiento frente a potencia de generación de 2 kWh/kW. Las tecnologías plomo-ácido no son elegibles).
+
 === ":fontawesome-solid-euro-sign: Ayudas"
     
 
