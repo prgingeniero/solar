@@ -6,8 +6,8 @@ theme:
   features:
     - header.autohide
   language: es
-  palette:
-    primary: amber
+  # palette:
+    # primary: amber
   name: material
   language: es
   favicon: assets/favicon.ico
